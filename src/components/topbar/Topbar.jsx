@@ -5,21 +5,21 @@ export default function Topbar() {
   return (
     <div className='topbar'>
 	<div className="topbarWrapper">
-		<div className="topLeft">
-			<span className="logo">Aka Shop</span>
-		</div>
 		<div className="topRight">
+			<img src="https://cdn-icons-png.flaticon.com/512/147/147140.png" alt="profileImage" className='topAvatar'/>
 			<div className="topbarIconsContainer">
-				<NotificationsNone/>
-				<div className="topIconBadge">2</div>
+				<Settings/>
 			</div>
 			<div className="topbarIconsContainer">
 				<Language/>
 			</div>
 			<div className="topbarIconsContainer">
-				<Settings/>
+				<NotificationsNone/>
+				<div className="topIconBadge">+۲</div>
 			</div>
-			<img src="https://cdn-icons-png.flaticon.com/512/147/147140.png" alt="profileImage" className='topAvatar'/>
+		</div>
+		<div className="topLeft">
+			<span className="logo">آکا شاپ</span>
 		</div>
 	</div>
     </div>
