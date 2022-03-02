@@ -31,19 +31,63 @@
 
 }
 .topIconBadge{
-	width: 15px; height: 15px;
+	width: 16px; height: 16px;
 	position: absolute;
 	top: -5px; right: 0;
 	color: white;
 	border-radius: 50%;
 	display: flex;
+	font-weight: 100;
 	font-size: 12px;
 	background-color: firebrick;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 .topAvatar{
 	width: 40px; height: 40px;
 	border-radius: 50%;
 	cursor: pointer;
+}
+.topbarBadge{
+	width: 240px;
+	height: 180px;
+	position: absolute;
+	z-index: 99;
+	-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.7); 
+	box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.7);
+	background-color: #EEEEEE;
+	padding: 10px;
+	border-radius: 10px;
+	transform: translateX(-10px) translateY(5px);
+}
+.topbarBadge::before{
+	content: "";
+	position: absolute;
+	z-index: 100;
+	width: 0;
+ 	height: 0;
+     	border-left: 20px solid transparent;
+      	border-right: 20px solid transparent;
+      	border-bottom: 20px solid #EEEEEE;
+	transform: translateX(-8px) translateY(-20px);
+}
+.topbarBadge.disabled{
+	display: none;
+}
+.topbarBadgeList{
+	width:initial ; height: inherit;
+	position: relative;
+	overflow: hidden;
+	overflow-y: visible;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;  /* IE and Edge */
+ 	scrollbar-width: none;  /* Firefox */
+	list-style: none;
+}
+.topbarBadgeList::-webkit-scrollbar {
+	display: none;
+}
+.topbarBadgeItem{
+	
 }
